@@ -1,6 +1,6 @@
 server:
     port: 9090
-    context-path: #/liuzh/
+    context-path: /liuzh/
 
 logging:
     level:
@@ -14,16 +14,6 @@ druid:
     min-idle: 1
     max-active: 20
     test-on-borrow: true
-
-spring:
-    mvc:
-        view:
-            prefix: /templates/
-            suffix: .ftl
-    freemarker:
-        cache: false
-        request-context-attribute: request
-
 
 mybatis:
     type-aliases-package: tk.mybatis.springboot.model

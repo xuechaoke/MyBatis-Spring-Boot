@@ -1,0 +1,14 @@
+
+spring:
+  profiles:
+    active: dev
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+debug: true
